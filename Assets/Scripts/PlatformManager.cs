@@ -6,10 +6,10 @@ public class PlatformManager : MonoBehaviour
 {
 
     private float minX = -5.0f;
-    private float maxX = 10.0f;
+    public float maxX = 10.0f;
 
     private bool canMove;
-    private float speed = 10.0f;
+    public float speed = 10.0f;
 
     private Rigidbody rigidBody;
 
@@ -65,5 +65,6 @@ public class PlatformManager : MonoBehaviour
     {
         canMove = false;
         rigidBody.useGravity = true;
+        speed = 0f;
     }
 }
