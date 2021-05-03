@@ -50,5 +50,11 @@ public class GameManager : MonoBehaviour
         titleScreen.gameObject.SetActive(false);
         Time.timeScale = 1;
         isGameActive = true;
+       
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
